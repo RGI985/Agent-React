@@ -14,7 +14,7 @@ client = genai.Client(api_key=api_key)
 def response_generator(contents):
     # Change to generate_content_stream
     response = client.models.generate_content_stream(
-        model="gemini-1.5-flash",
+        model="gemini-3-flash-preview",
         contents=contents,
         config=types.GenerateContentConfig(
             thinking_config=types.ThinkingConfig(thinking_level="low"))
