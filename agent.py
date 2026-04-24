@@ -5,8 +5,10 @@ from google.genai import types
 import io
 from gtts import gTTS
 
-load_dotenv()
-client = genai.Client()
+api_key = st.secrets["GOOGLE_API_KEY"]
+
+# 3. Pass the key directly to the client
+client = genai.Client(api_key=api_key)
 
 # Streamed response emulator
 def response_generator(contents):
