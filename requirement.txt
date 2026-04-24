@@ -55,5 +55,10 @@ tornado==6.5.5
 tqdm==4.67.3
 typing-extensions==4.15.0
 typing-inspection==0.4.2
+streamlit
+google-genai
+python-dotenv
+gTTS
+
 uritemplate==4.2.0
 urllib3==2.6.3
